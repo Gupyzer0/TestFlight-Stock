@@ -1,0 +1,29 @@
+@PART[]:HAS[!MODULE[TestFlightInterop]]:BEFORE[zTestFlight] 
+{
+    @MODULE[ModuleB9PartSwitch]:HAS[#moduleID[engineSwitch]]
+	{
+        @SUBTYPE[]
+        {
+            TESTFLIGHT:NEEDS[TestLite|TestFlight]
+            {
+                
+            }
+        }
+
+        @SUBTYPE[]
+        {
+            TESTFLIGHT:NEEDS[TestLite|TestFlight]
+            {
+
+            }
+        }
+    }
+}
+
+@PART[]:HAS[!MODULE[TestFlightInterop]]:BEFORE[zTestFlight] // Sorau
+{
+   TESTFLIGHT:NEEDS[TestLite|TestFlight]
+   {
+      
+   }
+}
