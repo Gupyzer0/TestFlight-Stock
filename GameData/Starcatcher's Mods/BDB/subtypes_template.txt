@@ -20,10 +20,10 @@
     }
 }
 
-@PART[]:HAS[!MODULE[TestFlightInterop]]:BEFORE[zTestFlight] // Sorau
+@PART[]:HAS[!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
 {
-   TESTFLIGHT:NEEDS[TestLite|TestFlight]
-   {
-      
-   }
+    TESTFLIGHT:NEEDS[TestLite|TestFlight]
+    {
+        
+    }
 }
